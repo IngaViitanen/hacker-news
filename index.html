@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="https://fav.farm/👀" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Hacker News</title>
+  </head>
+  <body>
+    <main id="app">
+      <div class="search-wrapper">
+        <form id="searchForm">
+          <span class="header">
+            <h1>hacker</h1>
+            <h1>-</h1>
+            <h1>news</h1>
+          </span>
+          <div class="search-actions">
+            <input type="text" id="searchInput" placeholder="Search" required/>
+            <button type="submit" id="searchButton">Search <img src="/assets/icon-duck.svg" class="duck-icon"/> </button>
+          </div>
+          <div class="sort-actions">
+            <!-- <button id="sortByPoints">Rating</button>
+            <input type="number" id="pointsInput">
+            <label for="">more than or =</label>
+            <input type="checkbox" name="" value="=" id="">
+            <label for="">less than or =</label>
+            <input type="checkbox" name="" value=">=" id="">
+            <label for="">=</label>
+            <input type="checkbox" name="" value="=" id=""> -->
+            
+          </div>
+        </form>
+        <form id="filterForm">
+          <h3 id="sortByDate">Filter by date:</h3>
+          <div class="date-actions">
+            <input type="date" id="dateInput">
+            <button type="submit" id="addFilterBtn">add filter</button>
+          </div>
+        </form>
+      </div>
+      <div>
+        <h2 id="resultHeader">result</h2>
+        <ul id="news">
+        </ul>
+      </div>
+      <div class="paginationWrapper">
+        <button id="prevBtn">＜</button>
+        <div id="paginationNumbers">
+        </div>
+        <button id="nextBtn">＞</button>
+      </div>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

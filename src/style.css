@@ -1,0 +1,212 @@
+@import url('/ClashGrotesk_Complete/Fonts/WEB/css/clash-grotesk.css');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: ClashGrotesk-Regular;
+}
+
+:root {
+  background-color: #FDFBEE;
+  color: #000;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+main{
+  margin: 8rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-wrapper{
+  width: min(750px, 90%);
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 6rem;
+}
+
+/* form */
+#searchForm{
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  width: -webkit-fill-available;
+}
+
+h1{
+  line-height: 60%;
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-family: ClashGrotesk-Light;
+  letter-spacing: -11px;
+  padding: 0 4px;
+  margin-right: 0.5rem;
+}
+
+/* search action wrapper */
+.search-actions{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+}
+
+/* search input */
+input{
+  padding: 0.8rem;
+  height: 100%;
+  border: 6px solid black;
+  background-color: transparent;
+  flex: 1 0 0;
+  font-size: 1.2rem;
+}
+
+input:placeholder-shown{
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+/* search button */
+#searchButton{
+  height: 100%;
+  border: 6px solid black;
+  border-left: none;
+  padding: 0.2rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-family: ClashGrotesk-Medium;
+  font-size: 2rem;
+  letter-spacing: -2px;
+  /* font-weight: bold; */
+  display: flex;
+  align-items: center;
+}
+
+.duck-icon{
+  height: 30px;
+  padding-left: 0.5rem;
+}
+
+/* filter */
+.sort-actions{
+  align-self: flex-start;
+  margin-top: 1rem;
+}
+
+#sortByPoints, #addFilterBtn{
+  border: 6px solid black;
+  padding: 0.4rem;
+  background-color: transparent;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  font-family: ClashGrotesk-Medium;
+  font-size: 1.8rem;
+}
+
+#addFilterBtn{
+  margin: 0;
+  border-left: none;
+}
+
+#sortByPoints{
+  margin-right: 0.5rem;
+}
+
+#filterForm{
+  align-self: flex-start;
+
+}
+
+.date-actions{
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* lists */
+#resultHeader{
+  display: none;
+  align-self: flex-start;
+  text-transform: uppercase;
+  font-family: ClashGrotesk-Medium;
+  letter-spacing: 2px;
+  font-size: 2.2rem;
+}
+
+ul{
+  border-top: 6px solid black;
+}
+
+li{
+  font-family: ClashGrotesk-Bold;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem 0;
+  padding: 1rem 0;
+  list-style: none;
+  border-bottom: 3px solid black;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h3, h4, p, a{
+  font-family: ClashGrotesk-Bold;
+}
+
+.article-date{
+  align-self: center;
+  font-family: ClashGrotesk-Bold;
+}
+
+a{
+  color: #000;
+  max-width: 800px;
+  word-wrap: break-word;
+}
+
+/* pagination */
+.paginationWrapper{
+  display: flex;
+}
+
+#nextBtn, #prevBtn, .pageNumberBtn{
+  margin: 0 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.pageNumberBtn.active{
+  text-decoration: underline;
+}
+
+/* pagination buttons */
+#nextBtn, #prevBtn {
+  display: none;
+}
+
+#paginationNumbers{
+  display: flex;
+  align-items: flex-end;
+}

@@ -4,7 +4,7 @@ import { getSearchResults } from './api';
 import { nextBtnEl, prevBtnEl, renderPagination } from './pagination';
 import { handleError } from './errorHandler';
 
-export const searchQueryBase = import.meta.env.VITE_API_SEARCH_QUERY_BASE as string;
+export const searchQueryBase = import.meta.env.VITE_API_SEARCH_QUERY_BASE;
 const searchFormEl = document.querySelector<HTMLFormElement>("#searchForm")!;
 const articlesEl = document.querySelector<HTMLUListElement>("#news")!;
 const resultHeaderEl = document.querySelector<HTMLHeadingElement>("#resultHeader")!
